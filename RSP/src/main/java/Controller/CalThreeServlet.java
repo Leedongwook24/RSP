@@ -38,7 +38,7 @@ public class CalThreeServlet extends HttpServlet {
 		int computer2 = random.nextInt(3)+1;
 		int result;
 		
-		if( (user==computer && user==computer) || ((user!=computer && computer!=computer2)&& computer2!=user) )
+		if( (user==computer && user==computer2) || ((user!=computer && computer!=computer2)&& computer2!=user) )
 		{result =1;}
 		else if( (user==computer)&&(user!=computer2) ) {
 					if ((user==1 && computer2==2) ||
